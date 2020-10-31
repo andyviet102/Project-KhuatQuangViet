@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BASICSHOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/d22d9dd2e6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div id="cart_form">
+            <div id="cart-show" class="cart-header">
+                <div class="container">
+                    <a href="cai nay cua anh cong">
+                        <span id="cartNumbers"></span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <button class="btn-log" id="btn_login">Login</button>
+                    <button class="btn-log" id="btn_logout">Logout</button>
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <h1 class="bold">BASIC SHOP</h1>
+        </div>
+
+        <div class="nav">
+            <div class="container">
+                <ul>
+                    ><li><a href="index.html"><button>Trang Chủ</button></a></li>
+                    <li><a href="about.html"><button>Giới thiệu</button></a></li>
+                    <li><button id="btnManageBill">Quản lý đơn hàng</button></li>
+                    <li><button id="btnManageProduct">Quản lý sản phẩm</button></li>
+                    <li><button id="btnAdd">Thêm sản phẩm</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        <!--slide-form-->
+    <!-- <div class="container">
+        <div id= "demobrand" class="carousel slide" data-ride="carousel"></div>
+          <ul clas
+        </div> -->
+   
+        <div class="logIn" id="login_form">
+            <div>
+                <label for="username">Tên Đăng Nhập:</label>
+                <input class="form-control" type="text" id="userName">
+            </div>
+            <div>
+                <label for="pwd">Mật Khẩu:</label>
+                <input class="form-control" type="password" id="pass">
+            </div>
+            <div class="btn_login">
+                <button type="submit" class="btn_submit" id="btnSubmit">Đăng Nhập</button>
+                <button class="btn_submit" id="btn_register">Đăng Ký</button>
+            </div>
+        
+
+        <div class="signUp" id="register_form">
+            <div>
+                <label for="username">Tên Đăng Nhập:</label>
+                <input type="text" class="form-control" id="newuserName">
+            </div>
+            <div>
+                <label for="pass">Mật Khẩu:</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div>
+                <label for="pass2">Nhập Lại Mật Khẩu:</label>
+                <input type="password" class="form-control" id="confirmPassword">
+            </div>
+            <div class="btn_login">
+                <button class="btn_submit" type="submit" id="btnRegister">Đăng Ký</button>
+            </div>
+
+        <div id="filter_form">
+            <h1 class="bold">Sản phẩm lọc</h1>
+            <div id="filterBrand">
+                <ul id="listBrand"></ul>
+                <div class="content">
+                    <ul id="loadProduct"></ul>
+                </div>
+            </div>
+
+            <div id="user_form">
+                <div class="content">
+                    <ul id="listProduct"></ul>
+                </div>
+            </div>
+
+            <div id="detail_form">
+                <div id="productDetail"></div>
+            </div>
+            
+            <div id="admin_form">
+                <table id="table" class="table table-admin">
+                    <adminhead>
+                        <tr>
+                            <th>Tên Sản Phẩm</th>
+                            <th>Thương Hiệu</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Mô Tả</th>
+                        </tr>
+                    </adminhead>
+                    <abody id="ad_adbody"></abody>
+                </table>
+            </div>
+
+            <div class="add_product" id="add-product-form">
+                <div class="input">
+                  
+                    <input type="text" placeholder="Tên Sản Phẩm" id="newName">
+                </div>
+                <div class="input">
+                    
+                    <input type="text" placeholder="Nhẵn Hiệu" id="newBrand">
+                </div>
+                <div class="input">
+                    
+                    <input type="text" placeholder="Giá Sản Phẩm" id="newPrice">
+                </div>
+                <div class="input">
+                    
+                    <input type="text" placeholder="Số Lượng" id="newQuantily">
+                </div>
+                <div class="input">
+                   
+                    <input type="text" placeholder="Mô Tả" id="newDescription">
+                </div>
+                <button class="btn btn-outline-success" id="add_btn">Thêm và cập nhật</button>
+                <button class="btn btn-outline-danger" id="clear_btn">Xóa dữ liệu</button>
+            </div>
+            <div id="bill_form">
+                <table class="table" class="table table-bill">
+                    <billhead>
+                        <th>Tên Khách Hàng</th>
+                        <th>Số Điện Thoại</th>
+                        <th>Địa Chỉ</th>
+                        <th>Ngày Tạo Đơn</th>
+                        <th>Tổng Giá Trị Đơn Hàng</th>
+                    </billhead>
+                    <bbody id="listBill"></bbody>
+                </table>
+            </div>
+        </div>
+     </div>
+ </div>  
+</div>  
+<script src="logincu.js"></script>
+
+</body>
+</html>

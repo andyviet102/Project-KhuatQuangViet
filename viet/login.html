@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+
+<style>
+</style>
+</head> 
+<body>
+<button class="btn-log" id="btn_login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" border-radius:5px>Login</button>
+<span>
+  <p id="user_name"></p>
+</span>
+<button class="btn-log" id="btn_logout"onclick="document.getElementById('id02').style.display='block'" style="width: auto;" border-radius:5px >Logout</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" id='form' action="">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.0-9/119107466_1886337731508624_8155876459188839522_o.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_ohc=6eB6f7DbQdIAX9jl470&_nc_ht=scontent-xsp1-1.xx&oh=0019c7dd562158a215f9627f9627a888&oe=5FBE01C6" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+        <div class="logIn" id="login_form">
+            <div>
+                <label for="username">Tên Đăng Nhập:</label>
+                <input class="form-control" type="text" id="userName">
+            </div>
+            <div>
+                <label for="pwd">Mật Khẩu:</label>
+                <input class="form-control" type="password" id="pass">
+            </div>
+            <div class="btn_login">
+                <button type="submit" class="btn_submit" id="btnSubmit">Đăng Nhập</button>
+                <button class="btn_submit" id="btn_register">Đăng Ký</button>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="Remember">Remember me
+            </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<div id="in02" class="modal">
+    <form class="modal-content animate" action="">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='block'" class="close" title="Close Modal"></span>
+          <img src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.0-9/119107466_1886337731508624_8155876459188839522_o.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_ohc=6eB6f7DbQdIAX9jl470&_nc_ht=scontent-xsp1-1.xx&oh=0019c7dd562158a215f9627f9627a888&oe=5FBE01C6" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            
+        <div class="signUp" id="register_form">
+            <div>
+                <label for="username">Tên Đăng Nhập:</label>
+                <input type="text" class="form-control" id="newuserName">
+            </div>
+            <div>
+                <label for="pass">Mật Khẩu:</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div>
+                <label for="pass2">Nhập Lại Mật Khẩu:</label>
+                <input type="password" class="form-control" id="confirmPassword">
+            </div>
+            <div class="btn_login">
+                <button class="btn_submit" type="submit" id="btnRegister">Đăng Ký</button>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="Remember">Remember me
+            </label>
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
