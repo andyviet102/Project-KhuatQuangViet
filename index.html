@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./media/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./media/css/index.css">
+    <title>BASIC SHOP</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="container">
+        <!-- div gio hang  -->
+        <div >
+                <div id="tableCart">
+                    <!-- js code -->
+                </div>
+                <div>                   
+                        <span class="totalCart" id="totalCart" colspan="7"></span>
+                </div>
+            <!-- </table> -->
+        </div>
+        <!-- div gio hang -->
+        <!-- log in -->
+        <div class="logIn" style="display: flex; justify-content: flex-end;">
+                <!-- <div ><button id="aboutUs" class="logInItems">About us</button></div> -->
+                <div >
+                    <!-- <button id="signIn" class="logInItems">Sign In</button> -->
+                    <body>
+                        <button class="btn-log" id="btn_login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" border-radius:5px>Login</button>
+                        <span>
+                          <p id="user_name"></p>
+                        </span>
+                        <button class="btn-log" id="btn_logout"onclick="document.getElementById('id02').style.display='block'" style="width: auto;" border-radius:5px >Logout</button>
+                        
+                        <div id="id01" class="modal">
+                          
+                          <form class="modal-content animate" id='form' action="">
+                            <div class="imgcontainer">
+                              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                              <img src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.0-9/119107466_1886337731508624_8155876459188839522_o.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_ohc=6eB6f7DbQdIAX9jl470&_nc_ht=scontent-xsp1-1.xx&oh=0019c7dd562158a215f9627f9627a888&oe=5FBE01C6" alt="Avatar" class="avatar">
+                            </div>
+                        
+                            <div class="container1">
+                                <div class="logIn" id="login_form">
+                                    <div>
+                                        <label for="username">Tên Đăng Nhập:</label>
+                                        <input class="form-control" type="text" id="userName">
+                                    </div>
+                                    <div>
+                                        <label for="pwd">Mật Khẩu:</label>
+                                        <input class="form-control" type="password" id="pass">
+                                    </div>
+                                    <div class="btn_login">
+                                        <button type="submit" class="btn_submit" id="btnSubmit">Đăng Nhập</button>
+                                        <button class="btn_submit" id="btn_register">Đăng Ký</button>
+                                    </div>
+                                    <label>
+                                      <input type="checkbox" checked="checked" name="Remember">Remember me
+                                    </label>
+                            </div>
+                        
+                            <div class="container1" style="background-color:#f1f1f1">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                        
+                        <div id="in02" class="modal">
+                            <form class="modal-content animate" action="">
+                                <div class="imgcontainer">
+                                  <span onclick="document.getElementById('id02').style.display='block'" class="close" title="Close Modal"></span>
+                                  <img src="https://scontent-xsp1-1.xx.fbcdn.net/v/t1.0-9/119107466_1886337731508624_8155876459188839522_o.jpg?_nc_cat=108&ccb=2&_nc_sid=09cbfe&_nc_ohc=6eB6f7DbQdIAX9jl470&_nc_ht=scontent-xsp1-1.xx&oh=0019c7dd562158a215f9627f9627a888&oe=5FBE01C6" alt="Avatar" class="avatar">
+                                </div>
+                        
+                                <div class="container1">
+                                    
+                                <div class="signUp" id="register_form">
+                                    <div>
+                                        <label for="username">Tên Đăng Nhập:</label>
+                                        <input type="text" class="form-control" id="newuserName">
+                                    </div>
+                                    <div>
+                                        <label for="pass">Mật Khẩu:</label>
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                    <div>
+                                        <label for="pass2">Nhập Lại Mật Khẩu:</label>
+                                        <input type="password" class="form-control" id="confirmPassword">
+                                    </div>
+                                    <div class="btn_login">
+                                        <button class="btn_submit" type="submit" id="btnRegister">Đăng Ký</button>
+                                    </div>
+                                    <label>
+                                      <input type="checkbox" checked="checked" name="Remember">Remember me
+                                    </label>
+                                    <div class="container" style="background-color:#f1f1f1">
+                                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    </div>
+                                </div>
+                        </div>
+                    
+                </div>
+        </div>
+        <!-- log in --> 
+
+        <nav class="row" id="logoBar" >
+            <div class="menu-icon" style="padding-left: 20px;"><span class="fas fa-bars" id="menu-icon-bars"></span></div>
+            <!-- <div class="col-4" > -->
+                <div id="logo" ><img src="./media/img/logo + img/basic_brand.png" style="height: 50px;" alt=""></div>
+            <!-- </div> style="width: 30%;" -->
+            <!-- <div class="col-8" >  style="width: 70%; display: flex;" -->
+                
+                <div class="menu-items" >
+
+                    <li><button class="btn_menu" id="proMen">Men</button></li>
+                    <li><button class="btn_menu" id="proWomen">Women</button></li>
+                    <li><button class="btn_menu" id="">About Us</button></li>
+                    <li><button class="btn_menu" id="">Contact Us</button></li>
+                    <li><button class="btn_menu" id="">Blog</button></li>
+
+                </div>
+                <div  style="display: flex;">
+                    <form class="form-search" id="form-search" >
+                        <div class="box-search" style="position: relative;">
+                            <input id="search" type="text" style = "border-radius: 15px;outline: none; " placeholder="search" list="ProductsList" >
+                            <button id="conner" type="button" onclick="getInputValue()" style="border-radius: 50%; outline: none; padding-right: 23px; padding-top: 4px;" ><i class="fa fa-search"></i></button>
+                        </div>
+                        <datalist id="ProductsList">
+
+                        </datalist>
+                                        
+                    </form>
+                    <button id="shopCart" style="background-color:white; border: none; outline: none;"><div class="fa fa-shopping-cart" id="numberCard"></div></button>
+                </div>
+            <div class="search-icon" id="search-icon"><span class="fas fa-search"></span></div>
+            <div class="cancel-icon"><span class="fas fa-times"></span></div>
+            
+            </nav>
+
+        <div class="sliderShow">
+            <div id="menuItems">
+                <img src="./media/img/logo + img/adidas.jpg" class="mySlides" style="width: 100%;" alt="">
+                <img src="./media/img/logo + img/balenciaga.jpg" class="mySlides" style="width: 100%;" alt="">
+                <img src="./media/img/logo + img/nike.jpg" class="mySlides" style="width: 100%;" alt="">
+                <img src="./media/img/logo + img/vetements.jpg" class="mySlides" style="width: 100%;" alt="">
+            </div>
+ 
+            <button class="w3-button w3-display-left" id="prev" style="border : none; background-color: none;" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" id="next" style="border : none; background-color: none;" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    
+        <!-- header -->
+        <!-- main -->
+        <div id="main" style="">
+            <!-- sort by  -->
+            <div class="show_type" style="  position: relative; display: flex; justify-content: flex-end; padding-top: 10px; padding-bottom: 10px;">
+                <div >Sort by :</div>
+                <select name="" id="sortby" class="showSort" style="border: none; color: gray;">
+                    <option value="default">Default</option>
+                    <option value="low" >Price: Low - High</option>
+                    <option value="high" >Price: High - Low</option>
+                </select>
+            </div>
+            <!-- sort by -->
+            <!-- filter btn + products -->
+            <div class="row" id="row-items">
+                <div class="col-2" id="brand-items" style="width: 30%; ">
+                    <div class="brand">
+                        <button id="apparel">Apparel</button>
+                    </div>
+                    <div class="brand">
+                        <button id="shoes">Shoes</button>
+                    </div>
+                    <div class="brand">
+                        <button id="accessories">Accessories</button>
+                    </div>
+                    <div class="brand">
+                        <button id="nike">Nike</button>
+                    </div>
+                    <div class="brand">
+                        <button id="adidas">Adidas</button>
+                    </div>
+                    <div class="brand">
+                        <button id="vetements">Vetements</button>
+                    </div>
+                    <div class="brand">
+                        <button id="balenciaga">Balenciaga</button>
+                    </div>
+                </div>
+
+                <!-- show sản phẩm -->
+                <div id="showList" class="col-7" >
+                    <!-- products -->
+                </div>
+                
+                <!-- </div> -->
+        <!-- main -->
+    </div>
+    <div class="footer" style="background-color: black;width: 100%; height: 200px; display: flex; margin-left: 0%;">
+        <div style="width: 30%;"><img src="./media/img/logo + img/basic_brand_white.png" style="width: 40%; margin: 10%;" alt=""></div>
+        <div  style="width:35%"></div>
+        <div class="contact" style="width:35%; color: white; padding-top: 20px;">
+            <div style=" font-size: 24px;">Contact</div>
+            <div><i class="fa fa-envelope" style="font-size:20px; "></i> hieuminhtran050300@gmail.com</div>
+            <div><i class="fa fa-phone" style="font-size:20px"></i> 0969.907.663</div>
+            <div><i class="fa fa-thumb-tack" style="font-size:20px"></i> 22C Thanh Cong , Ba Dinh , Ha Noi</div>
+        </div>
+    </div>
+
+</body>
+<script src="./media/js/login2.js"></script>
+<script src="./media/js/data.js"></script>
+<script src="./media/js/basic.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</html>
