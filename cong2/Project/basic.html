@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="media/css/style.css">
+</head>
+
+<body>
+    <!-- Detail Product -->
+    <h1>Detail Product</h1>
+    <div id="show_detail"></div>
+    <br><br>
+    <hr><br><br>
+
+
+
+
+
+
+
+
+
+    <br><br>
+    <hr><br><br>
+    <!-- gio hang -->
+    <div>Số lượng</div>
+    <div class="fa fa-shopping-cart" id="totalCardProduct">0</div>
+    <table>
+        <thead>
+            <th>img</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Gender</th>
+            <th>Category</th>
+            <th>ProductType</th>
+            <th>Price</th>
+            <th>Cost</th>
+            <th>Edit</th>
+        </thead>
+        <tbody id="table_cart">
+            <!-- js code -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="total" id="total" colspan="8"></td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <!-- Sort by -->
+    <select id="sortby">
+        <option value="default">Default</option>
+        <option value="low">Price: Low-High</option>
+        <option value="high">Price: High-Low</option>
+    </select>
+    <div id="pro">
+        <div id="choice">
+            <div>
+                <input type="checkbox" onclick="men()">Men</input>
+                <input type="checkbox" onclick="women()">Women</input>
+            </div>
+
+        </div>
+        <div id="main">
+            <!-- js code product -->
+        </div>
+
+    </div>
+
+    <div>
+        <input type="number" id="idPro" placeholder="id">
+        <input type="text" id="catPro" placeholder="category">
+        <input type="text" id="namePro" placeholder="name">
+        <input type="text" id="brandPro" placeholder="brand">
+        <input type="text" id="sizePro" placeholder="size">
+        <input type="text" id="colorPro" placeholder="color">
+        <input type="text" id="genderPro" placeholder="gender">
+        <input type="number" id="pricePro" placeholder="price">
+        <input type="text" id="imgPro" placeholder="img">
+        <input type="text" id="desPro" placeholder="description">
+        <input type="text" id="typePro" placeholder="productType">
+        <button id="btn_add">Add</button>
+        <button>Clear</button>
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Category</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Gender</th>
+                <th>Price</th>
+                <th>Img</th>
+                <th>Description</th>
+                <th>ProductType</th>
+                <th>Edit</th>
+            </thead>
+            <tbody id="MaTable">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="./media/js/data.js"></script>
+    <script src="./media/js/basic.js"></script>
+</body>
+
+</html>
