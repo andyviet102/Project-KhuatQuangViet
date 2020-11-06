@@ -1,4 +1,4 @@
-.signUp{
+ .signUp{
     margin-top: 20px;
 }
 .btn{
@@ -14,6 +14,7 @@
 }
 .form-control {
     display: flex;
+    width: 100%;
 }
 .cart-header i,
     span {
@@ -41,7 +42,7 @@
     box-sizing: border-box ;
 }
 
-button{
+.btn-login, .btn-logout, .btn_submit, .cancelbtn{
     background-color:transparent;
     width: 100%;
     border: none;
@@ -82,7 +83,7 @@ span.psw{
     height: 100%;
     overflow: auto;
     background-color: rgb(0, 0,0);
-    background-color: rgba(0,0,0,4);
+    background-color: rgb(145 145 145 / 64%);
 }
 .modal-content{
     background-color: #fefefe;
@@ -102,3 +103,23 @@ span.psw{
     color:red;
     cursor: pointer;
 }
+#user_name{
+    color: black;
+    width: 75px;
+    height: 29px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    border-left-width: 0px;
+    margin-top: 0px;
+    font-size: 17px;
+}
+label{
+    float:left;
+  }
+    
+  #checked{
+    margin-right: 185px;
+    display:inline-block;
+    width:10%;
+  }
+  

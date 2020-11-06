@@ -15,6 +15,25 @@
     /* display: ; */
     /* z-index: -1; */
 }
+.box-brand-items{
+    /* border-bottom:1px solid black; */
+    border-top:1px solid black;
+    padding-left: 15%;
+}
+.brand{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.brand:hover{
+    background-color: black;
+    color: white;
+    /* border-bottom: 1px solid black; */
+    outline: none;
+}
 #logoBar{
     display: flex;
     flex-wrap: wrap;
@@ -170,12 +189,24 @@ nav{
     
 }
 .col-7{
-    width: 70%;
+    width: 0%;
 }
-td{
-    border-right: solid;
-    border-top: solid;
+/* .contact{
+    width:50%; 
+    color: white; 
+    padding-top: 20px; 
+    margin-left: 30px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+} */
+.boxItems{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/**/
+
 /* #ProductsList{
     margin-right: 10%;
 } */
@@ -278,8 +309,17 @@ td{
         flex-direction: column;
         /* display: table-cell; */
     }
-    #brand-items{
+    #brand-items {
         display: flex;
+    }
+    #brand-items .box-brand-items{
+        display: flex;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+        
+    }
+    .brand{
+        font-size: 11px;
     }
     #showList{
         width: 100%;
@@ -299,4 +339,8 @@ td{
         border: 10px solid transparent;
         border-bottom-color: red;
     } */
+}
+.TlistPro{
+    /* width: 100%; */
+    margin-right: 20%;
 }
